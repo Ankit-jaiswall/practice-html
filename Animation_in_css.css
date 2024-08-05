@@ -1,0 +1,51 @@
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+    /* background-color: pink;
+    animation-name: colors,fontanimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* animation-name: fontanimation;
+    animation-duration: 1s ;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: widthani 2.5s ease-in .1s infinite normal,colors 2.5s ease-in .1s infinite normal ,fontanimation 2s ease-in .1s infinite normal;
+
+}
+@keyframes fontanimation{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:30px;
+    }
+} 
+@keyframes colors{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: green;
+        border-radius: 10px;
+    }
+    100%{
+        background-color: greenyellow;
+        border-radius: 20px;
+    }
+}
+@keyframes widthani {
+    from{
+        width:90px;
+        
+    }
+    to{
+        width: 500px;
+    }
+    
+}

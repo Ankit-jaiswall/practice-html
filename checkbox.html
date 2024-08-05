@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/sarver">
+        <div ><!--Checkbox can be choosen multiple at once-->
+            <lebel for="age">i am 18+</lebel>
+                <input type="checkbox" id="age" name="Subject" value="age" checked />
+                <input type="checkbox" id="weight" name="Subject" value="weg" />
+                <lebel for="weight">Weight</lebel>
+                <button>Submit</button>
+            <hr>
+        </div >
+        <div><!--radio cannot be choosen multiple at once-->
+            <input type="radio" id="apple" name="fruit" vlau="apple"><!--Value attributes are used because of name went  to server as the value name -->
+            <lebel for="apple">Apple</lebel><!--Id shoud be asme for a group of radio so it will checked only one -->
+            <br>
+            <input type="radio" id="mango" name="fruit" valu="mango">
+            <lebel for="mango">mango</lebel>
+            <br>
+            <input type="radio" id="papaya" name="fruit" value="papaya">
+            <lebel for="papaya">papaya</lebel>
+        </div>
+        <div>
+            choose your profession
+            <select name="profession" id="profession">
+                <option value="dev" selected>Developer</option>
+                <option value="stu">Stident</option>
+                <option value="oth">Other</option>
+            </select>
+            <button>Submit</button>
+        </div>
+        <div>
+            <lebel for="volume">Select volume level</lebel>
+            <input type="range"
+             min="0" max="120" 
+             value="60" 
+             id="volume" 
+             name="volume" 
+             step="12" />
+            <button>Submit</button>
+        </div>
+        <div><!--Text area element is used to creat feedback area -->
+            <lebel for="feedback"> your valuable feedback please</lebel>
+            <textarea id="feedback" rows="10" cols="100" placehloder="Write your text here"></textarea>
+            <button>Submit</button>
+        </div><br>
+        <hr>
+        <div>
+            <input type="text" placeholder="First Name" name="fname">
+            <input type="text" placeholder="Last Name" name="lname"><br>
+            <lebel for="age">Please select your gender</lebel>
+            <select id="age">
+                <option val="male" selected >Male</option> 
+                <option val="female">Female</option>
+                <option val="other">other</option>
+            </select><br>
+            <lebel for="yes">Do you gree to all terms of service?</lebel>
+            <input type="checkbox" id="yes" name="yes" checked>
+            <lebel for="yes">yes, I agree</lebel><br>
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+</html>
